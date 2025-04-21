@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المدونة - المعرفة للخدمات الطلابية</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: white;
+      direction: rtl;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 20px 10px;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      font-size: 14px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      border-left: 1px solid white;
+      padding: 0 10px;
+    }
+
+    nav ul li:first-child a {
+      border-left: none;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 30px 0 10px;
+    }
+
+    .blog-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .blog-post {
+      background-color: #111;
+      border: 1px solid #444;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: right;
+    }
+
+    .blog-post h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .blog-post p {
+      font-size: 14px;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      color: #b6a542;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      .blog-post {
+        padding: 15px;
+      }
+
+      .blog-post h3 {
+        font-size: 16px;
+      }
+
+      .blog-post p {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="services.html">الخدمات</a></li>
+        <li><a href="courses.html">الدورات</a></li>
+        <li><a href="blog.html">المدونة</a></li>
+        <li><a href="store.html">المتجر</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>مقالات ومشاركات مفيدة</h1>
+    <div class="blog-container">
+      <div class="blog-post">
+        <h3>5 نصائح لإعداد بحث جامعي مميز</h3>
+        <p>في هذه المقالة نشاركك خطوات بسيطة تساعدك على تحسين جودة بحثك الأكاديمي وتحقيق درجات أفضل...</p>
+        <a class="read-more" href="#">اقرأ المزيد</a>
+      </div>
+      <div class="blog-post">
+        <h3>كيف تنظم وقتك كطالب جامعي</h3>
+        <p>إدارة الوقت مهارة حيوية للطلاب. تعرف على أدوات وتقنيات تساعدك على الدراسة بفعالية...</p>
+        <a class="read-more" href="#">اقرأ المزيد</a>
+      </div>
+      <div class="blog-post">
+        <h3>أشهر الأخطاء في كتابة المهام الجامعية</h3>
+        <p>تجنب الأخطاء الشائعة في الكتابة الأكاديمية لتقديم مهام احترافية ترضي الأساتذة والمشرفين...</p>
+        <a class="read-more" href="#">اقرأ المزيد</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
